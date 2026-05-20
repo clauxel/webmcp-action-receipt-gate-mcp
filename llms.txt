@@ -1,15 +1,12 @@
-# WebMCP Action Receipt Gate
+# WebMCP Action Receipt Gate MCP
 
-WebMCP Action Receipt Gate is a hosted remote MCP for WebMCP action receipt MCP.
+Paid remote MCP for WebMCP action receipt MCP, structured receipts, audit logs, and reviewer-ready evidence.
 
 Website: https://webmcpactionreceipt.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: WebMCP action receipt MCP
-Type: MCP
-Default plan: team
 MCP endpoint: https://webmcpactionreceipt.clauxel.com/mcp
 Server card: https://webmcpactionreceipt.clauxel.com/server-card.json
-Registry name: com.clauxel.webmcpactionreceipt/webmcpactionreceipt-mcp
-Tools: check_web_action_receipt, issue_action_receipt, explain_action_policy, log_action_attempt, export_action_audit
+Docs: https://github.com/clauxel/webmcp-action-receipt-gate-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: WebMCP action receipt MCP with structured receipts.
+Authentication: Bearer token required for production use.
+Tools: check_web_action_receipt, issue_action_receipt, explain_action_policy, log_action_attempt, export_action_audit
