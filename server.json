@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.webmcpactionreceipt/webmcpactionreceipt-mcp",
-  "description": "WebMCP Action Receipt Gate is a hosted remote MCP for WebMCP action receipt MCP.",
+  "title": "WebMCP Action Receipt Gate MCP",
+  "description": "Paid remote MCP for WebMCP action receipt MCP, structured receipts, audit logs, and reviewer-ready evidence.",
   "version": "1.0.0",
-  "website_url": "https://webmcpactionreceipt.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/webmcp-action-receipt-gate-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://webmcpactionreceipt.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/webmcp-action-receipt-gate-mcp",
+  "serverCardUrl": "https://webmcpactionreceipt.clauxel.com/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,15 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "WebMCP Action Receipt Gate MCP",
-      "server_card_url": "https://webmcpactionreceipt.clauxel.com/server-card.json"
-    }
-  }
+  "tags": [
+    "webmcp",
+    "action",
+    "receipt",
+    "remote-mcp"
+  ]
 }
