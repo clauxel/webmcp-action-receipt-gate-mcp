@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.clauxel.webmcpactionreceipt/webmcpactionreceipt-mcp",
+  "description": "WebMCP Action Receipt Gate is a hosted remote MCP for WebMCP action receipt MCP.",
+  "version": "1.0.0",
+  "website_url": "https://webmcpactionreceipt.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/webmcp-action-receipt-gate-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://webmcpactionreceipt.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "WebMCP Action Receipt Gate MCP",
+      "server_card_url": "https://webmcpactionreceipt.clauxel.com/server-card.json"
+    }
+  }
+}
